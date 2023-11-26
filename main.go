@@ -17,18 +17,18 @@ package main
 // go get -u github.com/go-sql-driver/mysql
 
 // 3. Configurei a conexão com o banco de dados passando as credenciais que constam lá no BD do Clever Cloud, é possivel
-// ver isso no codigo na linha 63.
+// ver isso no codigo na linha 97.
 
 // 4. A função initDB() garante que a conexão com o BD seja inicializada passando as credencias do BD dentro
 // da função sql.Open(). 
 // OBS: Chamei a função initDB() no início da função main() para garantir que a conexão com o banco de dados seja 
-// estabelecida no início da execução do seu programa.
+// estabelecida no início da execução do programa.
 
 // 5. As demais funções garante que interagimos com o BD fazendo execuções como get, post, put e delete para isso
 // utilizei querys do mysql como select, delete, insert e uptade.
 
 // 6. Criei um endpoint para cada função que necessita executar querys no BD, como podemos ver no codigo a partir 
-// da linha 306 foi criada as rotas com seus cujos metodos e funções.
+// da linha 342 foi criada as rotas com seus cujos metodos e funções.
 
 // Tabela criadas no BD: 
 
