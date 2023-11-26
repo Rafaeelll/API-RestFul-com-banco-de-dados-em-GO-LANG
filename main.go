@@ -30,6 +30,33 @@ package main
 // 6. Criei um endpoint para cada função que necessita executar querys no BD, como podemos ver no codigo a partir 
 // da linha 306 foi criada as rotas com seus cujos metodos e funções.
 
+// Tabela criadas no BD: 
+
+// Criação da table usuario no banco de dados mysql (clever-cloud).
+// CREATE TABLE usuario (
+//   id int auto_increment not null,
+//   nome varchar(30) not null,
+//   sobrenome varchar(30) not null,
+//   email varchar(200) unique not null,
+//   senha varchar(200) not null,
+//   telefone varchar(20) not null,
+//   jogo_fav varchar(30) null,
+//   plataforma_fav varchar(30) null,
+//   PRIMARY KEY(id));
+
+// Criação da table jogo no banco de dados mysql (clever-cloud).
+// CREATE TABLE jogo (
+//   id int auto_increment not null,
+//   nome varchar(30) not null,
+//   usuario_id int not null
+//   PRIMARY KEY (id));
+
+// Adicionado a foreign key na table jogo
+// ALTER TABLE jogo add constraint fk_jogo_usuario_id foreign key (usuario_id) references usuario (id);
+
+// Podemos dizer que um usuário pode ter vários jogos (relação "Um para Muitos"), mas cada jogo pertence a apenas um usuário.
+// a intenção é modelar uma relação em que um usuário pode ter vários jogos associados a ele, 
+// mas cada jogo está associado a apenas um usuário.
 
 import (
 	"database/sql"
