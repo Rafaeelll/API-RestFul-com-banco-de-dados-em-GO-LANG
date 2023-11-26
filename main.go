@@ -1,12 +1,14 @@
 package main
 
 
-// Instruções
+// Instruções do trabalho da materia Topicos especiais: 
 // O projeto deve apresentar um conjunto de APIs que manipulam dados em banco de dados usando a linguagem GO. 
 // Pode-se utilizar qualquer dependência para criar os endpoints. Pode-se utilizar qualquer dependência para um ORM 
 // que conecta e manipula dados em banco de dados.
 
-// Passo a passo:
+// Passo a passo que utlizei para desenvolver o projeto:
+
+// BD escolhido: Mysql hospedado no Clever Cloud.
 
 // 1. Para conectar a API em Go a um banco de dados MySQL hospedado na Clever Cloud,
 // precisei usar um driver de banco de dados MySQL e configurar a conexão, assim foi possivel interagir com o MySQL em Go.
