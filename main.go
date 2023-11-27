@@ -17,7 +17,7 @@ package main
 // go get -u github.com/go-sql-driver/mysql
 
 // 3. Configurei a conexão com o banco de dados passando as credenciais que constam lá no BD do Clever Cloud, é possivel
-// ver isso no codigo na linha 97.
+// ver isso no codigo na linha 99.
 
 // 4. A função initDB() garante que a conexão com o BD seja inicializada passando as credencias do BD dentro
 // da função sql.Open(). 
@@ -57,6 +57,8 @@ package main
 // Podemos dizer que um usuário pode ter vários jogos (relação "Um para Muitos"), mas cada jogo pertence a apenas um usuário.
 // a intenção é modelar uma relação em que um usuário pode ter vários jogos associados a ele, 
 // mas cada jogo está associado a apenas um usuário.
+
+// Realizei testes no Thunder Client com os CRUDS criados para confirmar se a API na linguagem go realmente conectou ao meu BD.
 
 import (
 	"database/sql"
